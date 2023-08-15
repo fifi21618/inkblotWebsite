@@ -187,7 +187,7 @@ color:hsl(48, 100%, 51%);
 }
 
 .service-list div:hover{
-    background:hsl(0, 100%, 51%);
+    background:hsl(221, 100%, 51%);
     transform:translateY(-10px);
 }
 
@@ -234,4 +234,17 @@ color:hsl(48, 100%, 51%);
 {
     font-weight:500;
     margin-bottom:20px;
+}
+
+.layer a
+{
+margin-top:20px;
+
+text-decoration: none;
+font-size:20px;
+line-height:60px;
+color: #fff;
+width:60px;
+height:60px;
+
 }
