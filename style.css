@@ -90,7 +90,6 @@ nav ul li a::after{
 
 nav ul li a:hover::after
 {
-
     width:100%;
 }
 
@@ -100,73 +99,67 @@ nav ul li a:hover::after
     padding:10px 10%;
 }
 
-#about{
+/*----about-----*/
+#about {
     padding:80px 0;
+    
 }
 .row{
     display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
+    justify-content: space-between;
 }
-.about-col1 {
+.about-col-1{
     flex-basis: 35%;
 }
-
-.about-col1 img{
+.about-col-1 img{
     width:100%;
     border-radius:15px;
-
 }
-
-.about-col2{   
-    flex-basis:60%;
+.about-col-2{
+    flex-basis: 60%;
 }
-
 .sub-title{
-     
-    font-size:60px;
-    font-weight:600;
-    color:#ffffff;
-    padding:10px;
+  font-size:  60px;
+  font-weight: 600;
+  color:#fff;
 }
-.tab-title
-{
-   display:flex;
-   margin: 20px 0 40px;
+.tab-title{
+    display:flex;
+    margin:20px 0 40px;
 }
-.tab-link {
+.tab-links{
     margin-right:50px;
     font-size:18px;
     font-weight:500;
-    cursor:pointer;
+    cursor: pointer;
     position:relative;
 }
-
-.tab-link ::after
-{
-   content:'';
-   width:0;
-   height:3px;
-   background-color:hsl(48, 100%, 51%); 
-   position:absolute;
-   left:0;
-   bottom:-8px; 
-   transition:0.5s;
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:hsl(47, 100%, 51%);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition: 0.5s;
 }
-.tab-link.active-link::after{
-    width:50%;
+.tab-links.active-link::after{
+width:50%;
 }
-
-.tab-content ul li {
-    list-style:none;
-    margin:10 px 0;
+.tab-contents ul li {
+    list-style: none;
+    margin:10px 0;
 }
-
-.tab-content {
+.tab-contents ul li span{
+    color:hsl(47, 100%, 51%);
+    font-size:16px;
+}
+.tab-contents{
     display:none;
 }
-.tab-content.active-tab{
-    display:block; 
+.tab-contents.active-tab{
+    display:block;
 }
 /* ---- services----*/
 #services{
@@ -270,7 +263,7 @@ color: #fff;
 text-decoration: none;
 font-size:18px;
 line-height:60px;
-/   background:#01143a;
+ 
 width:60px;
 height:60px;
 border-radius:50%;
