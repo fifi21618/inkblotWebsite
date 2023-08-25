@@ -24,12 +24,14 @@ background:#011c42;
 nav{ 
     width:100%;
     top:0;
-    left:0;
+    left:0; 
     position:absolute;
     padding:20px 8%;
     display:flex;
     align-items: center;
     justify-content: space-between;
+    
+   
 }
 
 .logo{
@@ -41,7 +43,7 @@ nav{
     position:absolute;
     right:0;
     bottom:0;
-    z-index:-1;
+    
     }
 
 @media(min-aspect-ratio: 16/9)
@@ -62,15 +64,19 @@ nav ul li{
     list-style:none;
     display: inline-block; 
     margin-top:10px;
-    margin-left:20px;       
+    margin-left:20px; 
+    position:relative;      
 }
 nav ul li a {
      color:hsl(0, 0%, 0%);
      text-decoration: none;
      font-size: 18px; 
+     position:relative;
+   
 }
 
 nav ul li a::after{
+   
     content:'';
     width:0;
     height:2px;
@@ -78,6 +84,8 @@ nav ul li a::after{
     left:0;
     bottom:-6px;
     transition: 0.5s;  
+    position:absolute;
+    z-index:1;
 }
 
 nav ul li a:hover::after
